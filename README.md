@@ -28,7 +28,7 @@ The script generates several charts:
 * For each country: the distribution of population density, on absolute (total population) and relative (%) terms.
 * For the set of specified countries: combined plots on absolute and relative terms. 
 
-![Combined_1](/Images/Figure All_A 01.png)
+![Combined_1](https://github.com/Rigonz/CountryPopDensityDistrib/Images/Figure All_A 01.png)
 
 ## Running the script
 The script uses the library [rasterio](https://rasterio.readthedocs.io/en/latest/index.html#), which I have not been able to run under python 3.8: it works well under 3.6.

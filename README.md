@@ -4,9 +4,9 @@ The distribution of the population density within a country.
 ## Presentation
 This repository aims at answering the following related questions:
 
-* There are sparsely populated wide areas, and densely populated neighborhoods, but how much people live on each of them? 
+* There are sparsely populated areas and densely populated neighborhoods, but how much people live on each of them? 
 * In brief: what is the distribution of the population density for a given country? 
-* And, can we get that for any country?
+* And, can we get that for any country in the world?
 
 ## Data
 The script reads geotiff raster files. For each country a raster with population counts and another with population densities are required.
@@ -19,18 +19,21 @@ Other providers of similar datasets exist, for instance:
 
 But while this information is also of high quality, it refers to counts per cell, not densities. It is possible to compute the density, but as I preferred that the script remained as simple as possible, I have sticked to GPW.
 
-The input datafiles need to be clipped to the desired boundary. Clipping can also be scripted, but it is not done here. (I use QGIS).
+The input datafiles need to be clipped to the desired boundary. Clipping can also be scripted, but it is not done here (I use QGIS).
 
-I use the term "country" but any border desired by the user at the time of clipping will do.
+I employ in this readme the term "country", but any border desired by the user at the time of clipping will do.
 
 ## Output
 The script generates several charts:
-* For each country: the distribution of population density, on absolute (total population) and relative (%) terms.
+* For each country: the distribution of population density, on absolute (total population) and relative (%, on 0-1 scale) terms.
 * For the set of specified countries: combined plots on absolute and relative terms. 
 
-![Combined_1](https://github.com/Rigonz/CountryPopDensityDistrib/Images/All_A_01.png)
+![Combined_1](https://github.com/Rigonz/CountryPopDensityDistrib/blob/main/Images/All_A_01.png)
+![Combined_2](https://github.com/Rigonz/CountryPopDensityDistrib/blob/main/Images/All_R_02.png)
+![ESP_1](https://github.com/Rigonz/CountryPopDensityDistrib/blob/main/Images/ESP_R.png)
 
 ## Running the script
-The script uses the library [rasterio](https://rasterio.readthedocs.io/en/latest/index.html#), which I have not been able to run under python 3.8: it works well under 3.6.
+The script is in Python. It uses the library [rasterio](https://rasterio.readthedocs.io/en/latest/index.html#), which I have not been able to run under python 3.8, but it works well under python 3.6.
 
-The script is uploaded as working on my computer: modifying the location of the files and other preferences is quite straightforward.
+The script is uploaded as it is working on my computer: modifying the location of the files and other preferences should be quite straightforward.
+

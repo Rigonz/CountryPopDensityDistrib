@@ -22,7 +22,7 @@ Other providers of similar datasets exist, for instance:
 
 While this information is also of high quality, it refers to counts per cell, not densities. The script [CALC DENS POP](https://github.com/Rigonz/CountryPopDensityDistrib/blob/main/CALC%20DENS%20POP%20R1%20py36.py) computes the population density from a raster with population counts, so it can be used to generate the density rasters required by "DENS POP".
 
-The input datafiles need to be clipped to the desired boundary. Clipping can also be scripted, but it is not done here (I use QGIS).
+The input datafiles need to be clipped to the desired boundary. Clipping can also be scripted, but it is not done here (I use QGIS; WorldPop provides raster files per country).
 
 ## Output
 The script generates several charts:

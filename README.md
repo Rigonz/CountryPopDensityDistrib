@@ -11,7 +11,8 @@ This repository aims at answering the following related questions:
 I employ in this readme the term "country", but any boundary desired by the user will do.
 
 ## Data
-The script "DENS POP R_ py36.py" reads geotiff raster files. For each country a raster with population counts and another with population densities are required.
+The script [DENS POP](https://github.com/Rigonz/CountryPopDensityDistrib/blob/main/DENS%20POP%20R2%20py36.py) reads geotiff raster files. For each country a raster with population counts and another with population densities are required.
+
 I have used the Gridded Population of the World ([GPW v4](https://sedac.ciesin.columbia.edu/data/collection/gpw-v4/sets/browse)), as it provides reliable data, world coverage, fairly good granularity (up to 30 arc-seconds) and several years (2000, 2005, 2010, 2020). 
 
 Other providers of similar datasets exist, for instance:
@@ -19,7 +20,7 @@ Other providers of similar datasets exist, for instance:
 * [GHSL](https://ghsl.jrc.ec.europa.eu/datasets.php)
 * [LandScan](https://landscan.ornl.gov/)
 
-While this information is also of high quality, it refers to counts per cell, not densities. The script "CALC DENS POP R_ py36.py" computes the population density from a raster with population counts, so it can be used to generate the density rasters required by "DENS POP R_ py36.py".
+While this information is also of high quality, it refers to counts per cell, not densities. The script [CALC DENS POP](https://github.com/Rigonz/CountryPopDensityDistrib/blob/main/CALC%20DENS%20POP%20R1%20py36.py) computes the population density from a raster with population counts, so it can be used to generate the density rasters required by "DENS POP".
 
 The input datafiles need to be clipped to the desired boundary. Clipping can also be scripted, but it is not done here (I use QGIS).
 

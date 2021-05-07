@@ -8,8 +8,10 @@ This repository aims at answering the following related questions:
 * In brief: what is the distribution of the population density for a given country? 
 * And, can we get that for any country in the world?
 
+I employ in this readme the term "country", but any boundary desired by the user will do.
+
 ## Data
-The script reads geotiff raster files. For each country a raster with population counts and another with population densities are required.
+The script "DENS POP R_ py36.py" reads geotiff raster files. For each country a raster with population counts and another with population densities are required.
 I have used the Gridded Population of the World ([GPW v4](https://sedac.ciesin.columbia.edu/data/collection/gpw-v4/sets/browse)), as it provides reliable data, world coverage, fairly good granularity (up to 30 arc-seconds) and several years (2000, 2005, 2010, 2020). 
 
 Other providers of similar datasets exist, for instance:
@@ -17,11 +19,9 @@ Other providers of similar datasets exist, for instance:
 * [GHSL](https://ghsl.jrc.ec.europa.eu/datasets.php)
 * [LandScan](https://landscan.ornl.gov/)
 
-But while this information is also of high quality, it refers to counts per cell, not densities. It is possible to compute the density, but as I preferred that the script remained as simple as possible, I have sticked to GPW.
+While this information is also of high quality, it refers to counts per cell, not densities. The script "CALC DENS POP R_ py36.py" computes the population density from a raster with population counts, so it can be used to generate the density rasters required by "DENS POP R_ py36.py".
 
 The input datafiles need to be clipped to the desired boundary. Clipping can also be scripted, but it is not done here (I use QGIS).
-
-I employ in this readme the term "country", but any border desired by the user at the time of clipping will do.
 
 ## Output
 The script generates several charts:
@@ -32,8 +32,8 @@ The script generates several charts:
 ![Combined_2](https://github.com/Rigonz/CountryPopDensityDistrib/blob/main/Images/All_R_02.png)
 ![ESP_1](https://github.com/Rigonz/CountryPopDensityDistrib/blob/main/Images/ESP_R.png)
 
-## Running the script
-The script is in Python. It uses the library [rasterio](https://rasterio.readthedocs.io/en/latest/index.html#), which I have not been able to run under python 3.8, but it works well under python 3.6.
+## Running the scripts
+The scripts are written in Python. They both use the library [rasterio](https://rasterio.readthedocs.io/en/latest/index.html#), which I have not been able to run under python 3.8, but it works well under python 3.6.
 
-The script is uploaded as it is working on my computer: modifying the location of the files and other preferences should be quite straightforward.
+Both scripts are uploaded as they are on my computer: modifying the location of the files and other preferences should be quite straightforward.
 

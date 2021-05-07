@@ -11,7 +11,7 @@ This repository aims at answering the following related questions:
 I employ in this readme the term "country", but any boundary desired by the user will do.
 
 ## Data
-The script [DENS POP](https://github.com/Rigonz/CountryPopDensityDistrib/blob/main/DENS%20POP%20R2%20py36.py) reads geotiff raster files. For each country a raster with population counts and another with population densities are required.
+The script [DENS POP](https://github.com/Rigonz/CountryPopDensityDistrib/blob/main/DENS%20POP%20R3%20py36.py) reads geotiff raster files. For each country a raster with population counts and another with population densities are required.
 
 I have used the Gridded Population of the World ([GPW v4](https://sedac.ciesin.columbia.edu/data/collection/gpw-v4/sets/browse)), as it provides reliable data, world coverage, fairly good granularity (up to 30 arc-seconds) and several years (2000, 2005, 2010, 2020). 
 

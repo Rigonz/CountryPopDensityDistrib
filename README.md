@@ -33,6 +33,11 @@ The script generates several charts:
 ![Combined_2](https://github.com/Rigonz/CountryPopDensityDistrib/blob/main/Images/All_R_02.png)
 ![ESP_1](https://github.com/Rigonz/CountryPopDensityDistrib/blob/main/Images/ESP_R.png)
 
+The program allows to compare among the data sources. The previous charts coorespond to the GPW unadjusted count in 2020, while these ones are for WorldPop estimates in 2020, adjusted to UN figures and constrained:
+![WP_Combined_a](https://github.com/Rigonz/CountryPopDensityDistrib/blob/main/Images/WP_ALLa.png)
+![WP_Combined_r](https://github.com/Rigonz/CountryPopDensityDistrib/blob/main/Images/WP_ALLr.png)
+
+
 ## Running the scripts
 The scripts are written in Python. They both use the library [rasterio](https://rasterio.readthedocs.io/en/latest/index.html#), which I have not been able to run under python 3.8, but it works well under python 3.6.
 

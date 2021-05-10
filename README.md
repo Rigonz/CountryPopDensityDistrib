@@ -41,6 +41,7 @@ The program allows to compare among the data sources. The previous charts coores
 
 The script "DENS POP MAP" creates raster files with the median population density in cells of defined size. For Spain (source: WorldPopulation, unadjusted, constrained, 2020;  10 km side):
 ![WP_ESP_o](https://github.com/Rigonz/CountryPopDensityDistrib/blob/main/Images/ESP_o.png)
+![WP_ESP_q](https://github.com/Rigonz/CountryPopDensityDistrib/blob/main/Images/ESP_q.png)
 
 As opposed to the standard point-density map:
 ![WP_ESP_d](https://github.com/Rigonz/CountryPopDensityDistrib/blob/main/Images/ESP_d.png)

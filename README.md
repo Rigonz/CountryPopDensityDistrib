@@ -35,7 +35,7 @@ The main script generates several charts:
 ![Combined_2](https://github.com/Rigonz/CountryPopDensityDistrib/blob/main/Images/All_R_02.png)
 ![ESP_1](https://github.com/Rigonz/CountryPopDensityDistrib/blob/main/Images/ESP_R.png)
 
-The program allows to compare among the data sources. The previous charts coorespond to the GPW unadjusted count in 2020, while these ones are for WorldPop estimates in 2020, adjusted to UN figures and constrained:
+The program allows to compare among the data sources. The previous charts correspond to the GPW unadjusted count in 2020, while these ones are for WorldPop estimates in 2020, adjusted to UN figures and constrained:
 ![WP_Combined_a](https://github.com/Rigonz/CountryPopDensityDistrib/blob/main/Images/WP_ALLa.png)
 ![WP_Combined_r](https://github.com/Rigonz/CountryPopDensityDistrib/blob/main/Images/WP_ALLr.png)
 

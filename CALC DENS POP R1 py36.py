@@ -8,22 +8,18 @@ IMPORTANT: requires py3.6 (rasterio)
 Script that:
 1) reads a series of raster files,
 2) computes aggregated statistics,
-3) makes charts showing the results.
+3) outputs the results.
 
 The input data files correspond to countries and represent population.
 For each country there is one file with the count of people per cell/pixel.
+The input raster data is prepared separately, in specific GIS software.
 
 The script calculates the projected area of each cell and from it the density.
 
-The script loops over the cells to prepare charts that present the distribution
-of the population according to the density.
+The calculations are run over each country/input file.
 
-The calculations are run over each country.
-
-The charts present the results for each country and for the group of countries.
-Chars are in relative (% in 0-1 range) and absolute (total population) terms.
-
-The raster data is prepared separately, in specific GIS software.
+The output is a raster file with the population density in the area of the
+input rasters.
 
 Version log.
 R0 (20210506):
